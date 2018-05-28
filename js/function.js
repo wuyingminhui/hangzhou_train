@@ -8,28 +8,33 @@ function(t, i) {
         var t = i.extend({},
         e, t);
         return this.each(function() {
+
             var e = i(t.id),
             n = e.find(t.sid);
             n.on("mouseenter",
             function() {
+                changeArea($(this)[0].id)
                 i(this).addClass("active").siblings().removeClass("active")
+
             })
         })
     };
 } (window, jQuery);
+
+
 $('.tab .menus li').each(function(){
     $('.tab .menus li').mouseover(function(){
         $('.tab .menus li').removeClass('bg');
         $(this).addClass('bg');
         var index = $(this).index();
         var arr = [
-                'assets/bg1.png',
-                'assets/bg2.png',
-                'assets/bg3.png',
-                'assets/bg4.png',
-                'assets/bg5.png',
-                'assets/bg6.png',
-                'assets/bg7.png',
+                // 'assets/bg1.png',
+                // 'assets/bg2.png',
+                // 'assets/bg3.png',
+                // 'assets/bg4.png',
+                // 'assets/bg5.png',
+                // 'assets/bg6.png',
+                // 'assets/bg7.png',
             ] // 鑳屾櫙鍥剧墖  涓嶉渶瑕佹敞閲婂嵆鍙�
         $('.tab .scroll').css('margin-top',-index*450+'px');
         $('.tab').css('background-image','url('+arr[index]+')')// 鑳屾櫙鍥剧墖  涓嶉渶瑕佹敞閲婂嵆鍙�

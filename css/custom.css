@@ -45,7 +45,7 @@ h1 small { font-size: 90% }
             Header Area
 ============================================================= */
 .header { background-color: #EB5055 }
-.logo { background: url("../img/passion.png") no-repeat scroll 0 0 transparent; height: 45px; text-indent: -9999px; width: 112px; }
+.logo { background: url("../images/west.png") no-repeat scroll 0 0 transparent; min-height: 40px; text-indent: -9999px; width: 250px; }
 
 /**bootstrap over style for menu**/
 .navbar-default{ background-color: #303441; border-bottom: 2px solid #4A4F5E; top: 0; left: 0; position: fixed; right: 0; z-index: 1030; margin-bottom: 20px; min-height: 50px; -webkit-transform: translateY(0%); -moz-transform: translateY(0%); transform: translateY(0%); -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; }
@@ -66,7 +66,7 @@ h1 small { font-size: 90% }
 .ha-header .navbar-toggle:hover .icon-bar, .ha-header .navbar-toggle:focus .icon-bar{background-color: #303441}
 
 .ha-header { background-color: #303441; border-bottom: 2px solid #4A4F5E; top: 0; left: 0; position: fixed; right: 0; z-index: 1030; margin-bottom: 20px; min-height: 50px; -webkit-transform: translateY(0%); -moz-transform: translateY(0%); transform: translateY(0%); -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; }
-.ha-header .navbar-nav > li > a { color: #efefef; font-size: 1em; text-transform: uppercase; }
+.ha-header .navbar-nav > li > a { color: #efefef; font-size: 1.1em; text-transform: uppercase; }
 .ha-header .navbar-nav > .active > a, .ha-header .navbar-nav > .active > a:hover, .ha-header .navbar-nav > .active > a:focus { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); color: #00E0F2; }
 .ha-header .navbar-nav > li > a:hover, .ha-header .navbar-nav > li > a:focus { background-color: rgba(0, 0, 0, 0); }
 /* Individual states */
@@ -74,7 +74,7 @@ h1 small { font-size: 90% }
 .ha-header-large { padding: 25px 0; }
 .ha-header-small { padding: 6px 0 0; }
 .ha-header-small .navbar-nav > li > a { padding-bottom: 10px; padding-top: 10px; }
-.ha-header-small .logo { background: url("../img/passion_small.png") no-repeat scroll 0 0 transparent; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; }
+.ha-header-small .logo { background: url("../images/west1.png") no-repeat scroll 0 0 transparent; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; transition: all 0.5s; }
 /* ==========================================================
                   jQuery FlexSlider v2.0
  * http://www.woothemes.com/flexslider/   in page 3
@@ -496,15 +496,16 @@ transform: rotate(360deg);
 #banner_img li{position:absolute;top:0;left:0;width:100%;height:650px;background-position:center;background-size:cover;display:none;}
 #banner_img .ad_img{position:absolute;right:10px;top:80px;width:506px;height:404px}
 #banner_img .ad_txt{position:absolute;left:10px;top:170px;color:#fff;text-shadow:1px 1px rgba(51,51,51,0.3);}
-#banner_img .ad_txt h2{font:bold 36px/60px Microsoft YaHei;}
+#banner_img .ad_txt h2{font:bold 36px/60px Microsoft YaHei;font-size: 3em}
+#banner_img .ad_txt p{font-size: 1.3em;line-height: 1.5em}
 #banner_img .ad_txt a{display:block;width:100px;height:25px;line-height:25px;text-align:center;margin-top:10px;background:#fff;color:#666;text-decoration:none;text-shadow:none;}
 #banner_ctr{position:absolute;width:960px;height:122px;margin-left:-480px;left:50%;bottom:40px;z-index:1;}
-#banner_ctr ul{width:960px;height:122px;background:url("../images/serv_ico.png") center no-repeat;font-size:0;line-height:0;position:relative;}
-#banner_ctr li{display:block;float:left;width:115px;height:122px;cursor:pointer;}
+#banner_ctr ul{width:960px;height:122px;background:url("../images/tt.png") center no-repeat;font-size:0;line-height:0;position:relative;}
+#banner_ctr li{display:block;float:left;width:230px;height:122px;cursor:pointer;}
 #banner_ctr li.first-item{background:#fff;width:20px;-webkit-border-radius:20px 0 0 20px;-moz-border-radius:20px 0 0 20px;border-radius:20px 0 0 20px;cursor:default;}
 #banner_ctr li.last-item{background:#fff;width:20px;-webkit-border-radius:0 20px 20px 0;-moz-border-radius:0 20px 20px 0;border-radius:0 20px 20px 0;cursor:default;}
-#drag_ctr{position:absolute;top:-14px;left:20px;width:115px;height:156px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;bottom:170px;background:#0084cf;}
-#drag_arrow{position:absolute;top:-14px;left:20px;width:115px;height:156px;background:url("images/drag_banner_arrow.gif.png") center 14px no-repeat;}
+#drag_ctr{position:absolute;top:-14px;left:20px;width:230px;height:156px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;bottom:170px;background:#0084cf;}
+#drag_arrow{position:absolute;top:-14px;left:20px;width:230px;height:156px;}
 /*cases*/
 
 
@@ -686,7 +687,7 @@ body{font:12px/180% Arial, Helvetica, sans-serif ,"新宋体";}
 
 .mr20{margin-right:20px}
 
-.zq-icon{display:inline-block;background:url(../images/icon.png) no-repeat;}
+/*.zq-icon{display:inline-block;background:url(../images/icon.png) no-repeat;}*/
 .icon40x40{width:40px;height:40px}
 .crad-area-icon1{background-position:0 0}
 .crad-area-icon2{background-position:-40px 0}
@@ -752,7 +753,7 @@ body{color:white; font-family: 'georgia' }
 
 .tab {
     width: 100%;
-    background-image: url(bg1.png);
+    /*background-image: url(bg1.png);*/
     background-size: cover;
     margin-top: 50px;
 }
