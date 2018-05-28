@@ -298,7 +298,7 @@ div.arrow { background: url("../img/arrow.png") no-repeat scroll 0 0 rgba(0, 0, 
 #contact .page-head:before { background:  #F0D8D9 }
 #contact .page-head small { color: #BA383D }
 #contact .page-head { border-bottom: 1px solid #BA383D }
-.contact { background-color: #EB5055; border-bottom: 5px solid #F76A6E; padding: 50px; font-size:.9em; color: #F0D8D9; font-size: 1.1em; line-height: 1.5; }
+.contact { background-color: #303441; border-bottom: 5px solid #4A4F5E; padding: 50px; font-size:.9em; color: #F0D8D9; font-size: 1.1em; line-height: 1.5; }
 .contact a { color: #F0D8D9 }
 .contact a:hover { color: #7A191C }
 #map { display: block; height:255px; margin: 0 auto; }
@@ -309,7 +309,7 @@ div.arrow { background: url("../img/arrow.png") no-repeat scroll 0 0 rgba(0, 0, 
 .overlay_arrow.below { top:-15px; border-left:16px solid transparent; border-right:16px solid transparent; border-bottom:16px solid #336699; }
 .contact_wrap { margin-top: 40px; }
 .contact_wrap > h3 { margin: 20px 0; }
-.contact .jumbotron { background-color: #DD4449; padding: 5px 15px; }
+.contact .jumbotron { background-color: #4A4F5E; padding: 5px 15px; }
 address { font-size: 0.6em; }
 .contact_wrap .form-group { margin-bottom: 15px; }
 .contact_wrap label { margin-bottom: 5px; }
@@ -319,7 +319,7 @@ label.error { color: #F0D8D9; display: block; float: none; font-size: 14px; marg
 .jumbotron.option2 .social_icons { position:relative; text-align:left; }
 .jumbotron.option2 .social_icons > ul { margin: 5px 0 !important; padding: 0; }
 label { color: #BA383D; font-size: 1.29em; font-weight: lighter; margin-bottom: 10px; text-transform: uppercase; }
-.form-control { background-color: #BA383D; color: #F0D8D9; border: none; border-radius: 0 0 0 0; height: 40px; line-height: 1.5; box-shadow: none; }
+.form-control { background-color: #4A4F5E; color: #F0D8D9; border: none; border-radius: 0 0 0 0; height: 40px; line-height: 1.5; box-shadow: none; }
 .form-control:focus { border-color: #F0D8D9; color:#F0D8D9; -webkit-box-shadow: -0.4em 0em 0em 0em #F0D8D9 inset; -moz-box-shadow: -0.4em 0em 0em 0em #F0D8D9 inset; box-shadow: -0.4em 0em 0em 0em #F0D8D9 inset; -webkit-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease; -moz-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease; -o-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease; -ms-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease; transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease; }
 .form-control:-moz-placeholder {
 color: #EB5055;
