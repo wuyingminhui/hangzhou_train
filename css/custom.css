@@ -500,7 +500,7 @@ transform: rotate(360deg);
 #banner_img .ad_txt p{font-size: 1.3em;line-height: 1.5em}
 #banner_img .ad_txt a{display:block;width:100px;height:25px;line-height:25px;text-align:center;margin-top:10px;background:#fff;color:#666;text-decoration:none;text-shadow:none;}
 #banner_ctr{position:absolute;width:960px;height:122px;margin-left:-480px;left:50%;bottom:40px;z-index:1;}
-#banner_ctr ul{width:960px;height:122px;background:url("../images/iii.png") center no-repeat;font-size:0;line-height:0;position:relative; }
+#banner_ctr ul{width:960px;height:122px;background:url("../images/tt1.png") center no-repeat;font-size:0;line-height:0;position:relative; }
 #banner_ctr li{display:block;float:left;width:230px;height:122px;cursor:pointer;}
 #banner_ctr li.first-item{background:#fff;width:20px;-webkit-border-radius:20px 0 0 20px;-moz-border-radius:20px 0 0 20px;border-radius:20px 0 0 20px;cursor:default;}
 #banner_ctr li.last-item{background:#fff;width:20px;-webkit-border-radius:0 20px 20px 0;-moz-border-radius:0 20px 20px 0;border-radius:0 20px 20px 0;cursor:default;}
