@@ -212,7 +212,7 @@
               <div class="main-info" id="chart1" style="height: 300px">
                 </div>
                 <p class="main-tip" style="text-align: center;">
-                  区块链工程师的薪酬范围也普遍高于普通开发工程师
+                  区块链工程师的薪酬范围也逐步提升
                 </p>
               </div>
             </div>
@@ -702,46 +702,39 @@
       };
       option = {
         title : {
-            text: '区块链工程师薪资情况',
-            x:'left'
+            text: '区块链薪资分布',
+            x:'center'
         },
-        color: ['#003366', '#e5323e', '#4cabce', '#006699'],
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                type: 'shadow'
-            }
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {d}%"
         },
         legend: {
-            data: ['普通工程师', '区块链工程师'],
-            right: 'left',
+            orient: 'vertical',
+            left: 'left',
+            data: ['11-20k','21-30k','10k及以下','31-40k','41-50k','50k以上']
         },
-        calculable: true,
-        xAxis: [
+        series : [
             {
-                type: 'category',
-                axisTick: {show: false},
-                data: ['应届生', '工作3年', '工作5年']
-            }
-        ],
-        yAxis: [
-            {
-                type: 'value'
-            }
-        ],
-        series: [
-            {
-                name: '普通工程师',
-                type: 'bar',
-                barGap: 0,
-                label: labelOption,
-                data: [20, 40, 60]
-            },
-            {
-                name: '区块链工程师',
-                type: 'bar',
-                label: labelOption,
-                data: [40, 60, 100]
+                name: '区块链',
+                type: 'pie',
+                radius : '55%',
+                center: ['50%', '60%'],
+                data:[
+                    {value:30.9, name:'11-20k'},
+                    {value:41.7, name:'21-30k'},
+                    {value:4.4, name:'10k及以下'},
+                    {value:11.9, name:'31-40k'},
+                    {value:7.2, name:'41-50k'},
+                    {value:3.9, name:'50k以上'},
+                ],
+                itemStyle: {
+                    emphasis: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                }
             }
         ]
       };
