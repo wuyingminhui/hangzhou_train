@@ -72,10 +72,10 @@
           <a class="javascript:;" href="javascript:;">文档管理</a>
           <dl class="layui-nav-child">
             <dd id="uploadfile">
-              <a href="./addFile.html">上传作业</a>
+              <a href="./addFile.html" >上传作业</a>
             </dd>
             <dd id="allfile">
-              <a href="./files.html">查看文档</a>
+              <a href="./files.html" >查看文档</a>
             </dd>
           </dl>
         </li>
@@ -146,7 +146,7 @@ layui.use(['element', 'form', 'upload'], function () {
 
   upload.render({
     elem: '#test3'
-    ,url: 'http://localhost:8080/upload/file'
+    ,url: 'http://47.100.249.161:8080/upload/file'
     ,accept: 'file' //普通文件
     ,size: 4096
     ,auto: false

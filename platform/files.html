@@ -72,10 +72,10 @@
           <a class="javascript:;" href="javascript:;">文档管理</a>
           <dl class="layui-nav-child">
             <dd id="uploadfile">
-              <a href="./addFile.html">上传作业</a>
+              <a href="./addFile.html" >上传作业</a>
             </dd>
             <dd id="allfile">
-              <a href="./files.html">查看文档</a>
+              <a href="./files.html" >查看文档</a>
             </dd>
           </dl>
         </li>
@@ -126,7 +126,7 @@ layui.use('table', function(){
   ,form = layui.form;
   table.render({
     elem: '#demo'
-    ,url: 'http://localhost:8080/file/all'
+    ,url: 'http://47.100.249.161:8080/file/all'
     ,where: {roleid: getUI().roleid, teacherid: getUI().teacherid} //如果无需传递额外参数，可不加该参数
     ,page: true
     ,width: '80%'
