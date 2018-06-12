@@ -1,9 +1,9 @@
-var debug_url = "http://localhost:8080"
+var debug_url = "http://47.100.249.161:8080"
 
 $(document).ready(function () {
   var ui = Cookies.getJSON('userinfo')
   if (ui == null || ui == {}){
-    window.location.href = 'file:///Users/pg/Downloads/201601091015390/login.html'
+    window.location.href = 'http://47.100.249.161/login.html'
   }
   var role = ui.roleid
   if (role == 0) {
