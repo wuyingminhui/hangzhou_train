@@ -1,0 +1,182 @@
+
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>西湾学院后台管理系统</title>
+<meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon"/>
+
+  <link href="../css/login/layui.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../css/login/global.css" media="all">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header header header-demo" summer>
+  <div class="layui-main">
+    <a class="logo" href="/">
+      <img src="../images/west.png" alt="layui" style="width: 160px;height: 40px">
+    </a>
+    <ul class="layui-nav">
+      <li class="layui-nav-item layui-hide-xs">
+        <a href="http://fly.layui.com/" target="_blank">社区</a>
+      </li>
+      
+      <li class="layui-nav-item layui-hide-xs">
+        <a href="">个人中心</a>
+        <dl class="layui-nav-child">
+          <dd><a a href="javascript:void(0)" onclick="logout()">退出</a></dd>
+        </dl>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <ul class="layui-nav layui-nav-tree site-demo-nav">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="javascript:;" href="javascript:;">公告管理</a>
+          <dl class="layui-nav-child">
+            <dd id='Noteall'>
+              <a href="./notices.html">查看公告</a>
+            </dd>
+            <dd id='AddNote'>
+              <a href="./addNotice.html">添加公告</a>
+            </dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item layui-nav-itemed" id="Manage">
+          <a class="javascript:;" href="javascript:;">用户管理</a>
+          <dl class="layui-nav-child">
+            <dd id='StudentManage'>
+              <a href="./students.html">学生管理</a>
+            </dd>
+            <dd id='TeacherManage'>
+              <a href="./teachers.html">老师管理</a>
+            </dd>
+            <dd id='ClassManage'>
+              <a href="./classes.html">班级管理</a>
+            </dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item layui-nav-itemed" id="fileManage">
+          <a class="javascript:;" href="javascript:;">文档管理</a>
+          <dl class="layui-nav-child">
+            <dd id="uploadfile">
+              <a href="#">上传作业</a>
+            </dd>
+            <dd id="allfile">
+              <a href="#">查看文档</a>
+            </dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="layui-body layui-tab-content site-demo site-demo-body">
+    <div class="layui-tab-item layui-show">
+      <div class="layui-main">
+        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+          <legend>新增学生</legend>
+        </fieldset>
+        <form class="layui-form" action="" lay-filter="selFilters">
+          <div class="layui-form-item">
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-block">
+              <input type="text" id="username" name="username" lay-verify="required" autocomplete="off" placeholder="请输入标题" class="layui-input">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">手机号</label>
+            <div class="layui-input-block">
+              <input type="text" id="phoneNum" name="phoneNum" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+            </div>
+          </div>
+          <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-block">
+              <input type="text" id="psd" name="psd" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+            </div>
+          </div>
+          
+          <div class="layui-form-item">
+            <label class="layui-form-label">选择班级</label>
+            <div class="layui-input-block">
+              <select name="interest" lay-filter="aihao" id="addS" lay-verify="required">
+                <option value=""></option>
+              </select>
+            </div>
+          </div>
+  
+          <div class="layui-form-item">
+            <div class="layui-input-block" >
+              <button class="layui-btn" type="button" onclick="window.location.href='./addClass.html'">
+                <i class="layui-icon">&#xe608;</i> 添加班级
+              </button>
+              <button class="layui-btn" lay-submit="" lay-filter="addSS">新增学生</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="layui-footer footer footer-demo">
+    <div class="layui-main">
+      <p>© 2018 <a href="/">layui.com</a> MIT license</p>
+      <p>
+        <a href="http://fly.layui.com/case/2018/" target="_blank">案例</a>
+        <a href="http://fly.layui.com/jie/3147/" target="_blank">支持</a>
+        <a href="javascript:;" site-event="contactInfo">联系</a>
+        <a href="https://github.com/sentsin/layui/" target="_blank" rel="nofollow">GitHub</a>
+        <a href="https://gitee.com/sentsin/layui" target="_blank" rel="nofollow">码云</a>
+        <a href="http://fly.layui.com/jie/2461/" target="_blank">微信公众号</a>
+      </p>
+      <p class="site-union">
+        
+        <span>提供 CDN 赞助</span>
+      </p>
+    </div>
+  </div>
+
+
+</div>
+<script src="../css/login/layui.all.js" type="text/javascript"></script>
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/util.js"></script> 
+<script src="../js/js.cookie.js" type="text/javascript"></script>
+<script>
+layui.use(['element', 'form'], function () {
+  var element = layui.element
+  var form = layui.form
+
+  form.on('submit(addSS)', function(data){
+    var username = $("#username").val()
+    var phoneNum = $("#phoneNum").val()
+    var psd = $("#psd").val()
+    var addS = $("#addS").val()
+    layer.confirm('确认增加这位学生吗?', {icon: 3, title:'确认增加学生'}, function(index){
+      addStudent(username, phoneNum, addS, psd, "./students.html")
+      layer.close(index);
+    });
+    return false;
+  });
+});
+
+$(document).ready(function () {
+  layui.use('form', function(){
+    var form = layui.form;
+    getClasses(form);
+  });
+});
+</script>
+</body>
+</html>
