@@ -503,6 +503,11 @@
   transform: translateY(0px);
   visibility: visible;
 }
+.service.service-style-2:hover .service-content p {
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+}
 .service.service-style-2 .service-content h6 {
   color: #fff;
   font-family: khula;
@@ -524,11 +529,7 @@
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
   visibility: hidden;
 }
-.service.service-style-2:hover .service-content p {
-  opacity: 1;
-  transform: translateY(0px);
-  visibility: visible;
-}
+
   .service-icon span {
     position: absolute;
     height: 100%;
@@ -579,15 +580,15 @@
     font-weight: 700;
     color: #333333;
     font-family: "Roboto", sans-serif; }
-    .service-content h2 a, .service-content h3 a, .service-content h4 a, .service-content h5 a, .service-content h6 a {
+/*    .service-content h2 a, .service-content h3 a, .service-content h4 a, .service-content h5 a, .service-content h6 a {
       color: #333333; }
       .service-content h2 a:hover, .service-content h3 a:hover, .service-content h4 a:hover, .service-content h5 a:hover, .service-content h6 a:hover {
-        color: #20c9c7; }
+        color: #20c9c7; }*/
   .service-content p {
     margin-bottom: 0; }
-  .service-content a.cr-readmore:hover,
+  /*.service-content a.cr-readmore:hover,
   .service-content a.cr-readmore2:hover {
-    color: #20c9c7; }
+    color: #20c9c7; }*/
 
 .service-image {
   overflow: hidden; }
@@ -605,15 +606,19 @@
     transition: all 0.4s ease-in-out 0s; }
 
 .service:hover .service-icon span:first-child {
-  top: -50%; }
+  top: -50% !important; }
 .service:hover .service-icon span:last-child {
-  top: 50%; }
+  top: 50% !important; }
 .service:hover .service-image img {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2); }
+  -webkit-transform: scale(1.2) !important;
+  -moz-transform: scale(1.2) !important;
+  -ms-transform: scale(1.2) !important;
+  -o-transform: scale(1.2) !important;
+  transform: scale(1.2) !important; }
+
+
+
+
 
 /**
     Portfoio Styles
@@ -745,8 +750,8 @@
     transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.05s; }
   .portfolio-content a {
     color: #fff; }
-    .portfolio-content a:hover {
-      color: #f1f1f1; }
+    /*.portfolio-content a:hover {
+      color: #f1f1f1; }*/
   .portfolio-content a.portfolio-zoom-trigger {
     color: #ffffff;
     display: inline-block;
